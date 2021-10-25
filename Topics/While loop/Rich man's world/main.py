@@ -21,8 +21,9 @@ print(year)
 #    The input format:
 # The initial sum of the deposit. It is guaranteed that the value will be
 # between 50,000 and 700,000.
-
+#
 # The output format:
+#
 # The number of years.
 
 # Sample Input:
