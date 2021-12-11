@@ -18,7 +18,8 @@ def guess_age():
     rem7 = int(input())
     age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
 
-    print("Your age is " + str(age) + "; that's a good time to start programming!")
+    print("Your age is " + str(
+        age) + "; that's a good time to start programming!")
 
 
 def count():
@@ -34,6 +35,28 @@ def count():
 def test():
     print("Let's test your programming knowledge.")
     # write your code here
+    print("Why do we use method?")
+
+    answers = ['To repeat a statement multiple times.',
+               'To decompose a program into several small subroutines.',
+               'To determine the execution time of a program.',
+               'To interrupt the execution of a program.'
+               ]
+
+    correct_answer = 1
+    # user_answer = -1
+
+    for key, answer in enumerate(answers):
+        print(f"{key + 1}. {answer}")
+
+    while True:
+        user_answer = int(input()) - 1
+
+        if user_answer == correct_answer:
+            break
+
+        print('Please, try again.')
+
     print('Completed, have a nice day!')
 
 
@@ -45,5 +68,32 @@ greet('Eliud', '2020')  # change it as you need
 remind_name()
 guess_age()
 count()
-# ...
+test()
 end()
+
+
+# def test(question, answer):
+#     index = 0
+#     question_num = 1
+#     print("Let's test your programming knowledge.")
+#     for i in range(len(question)):
+#         print(str(question_num) + ". ", question[index])
+#         question_num += 1
+#         index += 1
+#     b = int(input())
+#     while b != answer:
+#         print("Please, try again.")
+#         b = int(input())
+#     print('Completed, have a nice day!')
+
+# def end():
+#     print('Congratulations, have a nice day!')
+
+# greet('Yoda', '2021')  # change it as you need
+# remind_name()
+# guess_age()
+# count()
+# a = ["To repeat a statement multiple times.", "To decompose a program into several small subroutines.", "To determine the execution time of a program.", "To interrupt the execution of a program."]
+# answer = 2
+# test(a, answer)
+# end()
