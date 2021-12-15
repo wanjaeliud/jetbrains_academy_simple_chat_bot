@@ -1,2 +1,1 @@
-num = 179
-print(2 ** num)
+print(2 ** 179)
